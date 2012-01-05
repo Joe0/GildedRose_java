@@ -7,12 +7,19 @@ import java.util.Arrays;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.alexaitken.gildedrose.model.Inventory;
-import com.alexaitken.gildedrose.model.Item;
-import com.alexaitken.gildedrose.policy.impl.*;
-import com.alexaitken.gildedrose.service.QualityBoundsCorrectionService;
-import com.alexaitken.gildedrose.service.QualityUpdaterService;
+import com.joepritzel.gildedrose.model.Inventory;
+import com.joepritzel.gildedrose.model.Item;
+import com.joepritzel.gildedrose.policy.impl.*;
+import com.joepritzel.gildedrose.service.QualityBoundsCorrectionService;
+import com.joepritzel.gildedrose.service.QualityUpdaterService;
 
+/**
+ * Tests for Gilded Rose Kata.
+ * 
+ * @author Alex Aitken
+ * @author Joe Pritzel
+ * 
+ */
 public class InventoryTest {
 	// new Item("+5 Dexterity Vest", 10, 20),
 	// new Item("Aged Brie", 2, 0),
@@ -222,8 +229,9 @@ public class InventoryTest {
 
 	@Test
 	public void conjured_items_should_degrade_twice_as_fast() throws Exception {
-		Inventory inv = new Inventory(new Item[] { new Item(
-				"Conjured Mana Cake", 3, 6), new Item("Conjured Mana Cake", -1, 6) });
+		Inventory inv = new Inventory(new Item[] {
+				new Item("Conjured Mana Cake", 3, 6),
+				new Item("Conjured Mana Cake", -1, 6) });
 		inv.updateQuality();
 		assertEquals(4, inv.getItem(0).getQuality());
 		assertEquals(2, inv.getItem(1).getQuality());

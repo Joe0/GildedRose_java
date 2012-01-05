@@ -1,7 +1,7 @@
-package com.alexaitken.gildedrose.policy.impl;
+package com.joepritzel.gildedrose.policy.impl;
 
-import com.alexaitken.gildedrose.model.Item;
-import com.alexaitken.gildedrose.policy.Policy;
+import com.joepritzel.gildedrose.model.Item;
+import com.joepritzel.gildedrose.policy.Policy;
 
 /**
  * Reduces quality by two per day, and twice that after sellin.

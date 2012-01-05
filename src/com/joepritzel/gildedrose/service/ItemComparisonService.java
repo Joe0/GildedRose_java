@@ -1,6 +1,6 @@
-package com.alexaitken.gildedrose.service;
+package com.joepritzel.gildedrose.service;
 
-import com.alexaitken.gildedrose.model.Item;
+import com.joepritzel.gildedrose.model.Item;
 
 /**
  * Compares Items.

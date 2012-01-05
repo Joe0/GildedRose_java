@@ -1,10 +1,10 @@
-package com.alexaitken.gildedrose.service;
+package com.joepritzel.gildedrose.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.alexaitken.gildedrose.model.Item;
-import com.alexaitken.gildedrose.policy.Policy;
+import com.joepritzel.gildedrose.model.Item;
+import com.joepritzel.gildedrose.policy.Policy;
 
 /**
  * 

@@ -1,7 +1,7 @@
-package com.alexaitken.gildedrose.model;
+package com.joepritzel.gildedrose.model;
 
-import com.alexaitken.gildedrose.service.QualityBoundsCorrectionService;
-import com.alexaitken.gildedrose.service.QualityUpdaterService;
+import com.joepritzel.gildedrose.service.QualityBoundsCorrectionService;
+import com.joepritzel.gildedrose.service.QualityUpdaterService;
 
 public class Inventory {
 
