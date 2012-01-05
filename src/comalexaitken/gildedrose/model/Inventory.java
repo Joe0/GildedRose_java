@@ -1,8 +1,15 @@
-package com.joepritzel.gildedrose.model;
+package comalexaitken.gildedrose.model;
 
 import com.joepritzel.gildedrose.service.QualityBoundsCorrectionService;
 import com.joepritzel.gildedrose.service.QualityUpdaterService;
 
+/**
+ * Container for items.
+ * 
+ * @author Alex Aitken
+ * @author Joe Pritzel
+ * 
+ */
 public class Inventory {
 
 	private Item[] items;

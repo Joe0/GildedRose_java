@@ -1,6 +1,6 @@
 package com.joepritzel.gildedrose.service;
 
-import com.joepritzel.gildedrose.model.Item;
+import comalexaitken.gildedrose.model.Item;
 
 /**
  * This service clones Item objects.

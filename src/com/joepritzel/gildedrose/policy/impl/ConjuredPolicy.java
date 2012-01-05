@@ -1,7 +1,7 @@
 package com.joepritzel.gildedrose.policy.impl;
 
-import com.joepritzel.gildedrose.model.Item;
 import com.joepritzel.gildedrose.policy.Policy;
+import comalexaitken.gildedrose.model.Item;
 
 /**
  * Reduces quality by two per day, and twice that after sellin.

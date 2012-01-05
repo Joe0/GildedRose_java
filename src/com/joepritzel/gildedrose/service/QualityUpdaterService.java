@@ -3,8 +3,8 @@ package com.joepritzel.gildedrose.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.joepritzel.gildedrose.model.Item;
 import com.joepritzel.gildedrose.policy.Policy;
+import comalexaitken.gildedrose.model.Item;
 
 /**
  * Updates the quality of items.

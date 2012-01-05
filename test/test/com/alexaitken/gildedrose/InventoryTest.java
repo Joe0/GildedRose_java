@@ -7,11 +7,11 @@ import java.util.Arrays;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.joepritzel.gildedrose.model.Inventory;
-import com.joepritzel.gildedrose.model.Item;
 import com.joepritzel.gildedrose.policy.impl.*;
 import com.joepritzel.gildedrose.service.QualityBoundsCorrectionService;
 import com.joepritzel.gildedrose.service.QualityUpdaterService;
+import comalexaitken.gildedrose.model.Inventory;
+import comalexaitken.gildedrose.model.Item;
 
 /**
  * Tests for Gilded Rose Kata.

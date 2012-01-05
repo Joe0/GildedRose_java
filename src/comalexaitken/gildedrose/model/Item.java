@@ -1,7 +1,9 @@
 /**
+ * Item value.
  * 
+ * @author Alex Aitken
  */
-package com.joepritzel.gildedrose.model;
+package comalexaitken.gildedrose.model;
 
 public class Item {
 

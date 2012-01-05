@@ -1,6 +1,6 @@
 package com.joepritzel.gildedrose.policy;
 
-import com.joepritzel.gildedrose.model.Item;
+import comalexaitken.gildedrose.model.Item;
 
 /**
  * The Policy interface, which is used to modify Items.

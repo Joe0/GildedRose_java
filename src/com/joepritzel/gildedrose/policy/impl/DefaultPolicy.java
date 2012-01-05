@@ -1,7 +1,7 @@
 package com.joepritzel.gildedrose.policy.impl;
 
-import com.joepritzel.gildedrose.model.Item;
 import com.joepritzel.gildedrose.policy.Policy;
+import comalexaitken.gildedrose.model.Item;
 
 /**
  * The default policy, which just decreases the quality by one.
