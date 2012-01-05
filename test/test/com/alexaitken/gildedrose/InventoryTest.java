@@ -200,10 +200,11 @@ public class InventoryTest {
 
 	@Test
 	public void conjured_items_should_degrade_twice_as_fast() throws Exception {
-		Item i = new Item("Conjured Mana Cake", 3, 6);
-		Inventory inv = new Inventory(new Item[] { i });
+		Item[] i = new Item[] { new Item("Conjured Mana Cake", 3, 6), new Item("Conjured Mana Cake", -1, 6) };
+		Inventory inv = new Inventory(i);
 		inv.updateQuality();
-		assertEquals(4, i.getQuality());
+		assertEquals(4, i[0].getQuality());
+		assertEquals(2, i[0].getQuality());
 	}
 
 	@Test
