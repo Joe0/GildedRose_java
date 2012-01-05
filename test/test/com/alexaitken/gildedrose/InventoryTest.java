@@ -31,12 +31,15 @@ public class InventoryTest {
 		QualityUpdaterService.registerPolicy(new AgedBriePolicy());
 		QualityUpdaterService.registerPolicy(new SulfurasPolicy());
 		QualityUpdaterService.registerPolicy(new BackstagePassPolicy());
-		
+		QualityUpdaterService.registerPolicy(new ConjuredPolicy());
+
 		// Specific QualityCorrectionServices
-		QualityBoundsCorrectionService.registerPolicy(new SulfurasCorrectionPolicy());
-		
+		QualityBoundsCorrectionService
+				.registerPolicy(new SulfurasCorrectionPolicy());
+
 		// Default QualityCorrectionServices
-		QualityBoundsCorrectionService.registerPolicy(new DefaultCorrectionPolicy(), true);
+		QualityBoundsCorrectionService.registerPolicy(
+				new DefaultCorrectionPolicy(), true);
 	}
 
 	@Test
@@ -215,6 +218,24 @@ public class InventoryTest {
 		assertEquals(50, sut.getItem(0).getQuality());
 		assertEquals(50, sut.getItem(1).getQuality());
 		assertEquals(50, sut.getItem(2).getQuality());
+	}
+
+	@Test
+	public void conjured_items_should_degrade_twice_as_fast() throws Exception {
+		Inventory inv = new Inventory(new Item[] { new Item(
+				"Conjured Mana Cake", 3, 6) });
+		inv.updateQuality();
+		assertEquals(4, inv.getItem(0).getQuality());
+	}
+
+	@Test
+	public void conjured_items_should_have_bounds_checking() throws Exception {
+		Inventory inv = new Inventory(new Item[] {
+				new Item("Conjured Mana Cake", 3, 1),
+				new Item("Conjured Mana Cake", 3, 55) });
+		inv.updateQuality();
+		assertEquals(0, inv.getItem(0).getQuality());
+		assertEquals(50, inv.getItem(1).getQuality());
 	}
 
 }
